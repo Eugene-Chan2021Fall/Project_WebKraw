@@ -1,10 +1,16 @@
 <!DOCTYPE html>
+{% extends "base.html" %}
 <html lang="en">
+    {%block content%}
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
     </head>
+    
+    <h1>This is the homepage</h1>
+    <p>Database chart will be illustrated in here!</p>
+
     <body>
         <table>
             <tr>        
@@ -23,4 +29,5 @@
             
         </table>
     </body>
+    {% endblock %}
 </html>
