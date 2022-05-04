@@ -7,7 +7,7 @@ data = (
         ("Nike Air Frost One", "Ebay", "$150"),
         ("Nike", "Amazon", "$100"),
         ("Swoosh", "Nike.com", "$90"),
-        ("alpha","footlocker.com","$140")
+        ("alphalx","footlocker.com","$140")
 
 )
 
