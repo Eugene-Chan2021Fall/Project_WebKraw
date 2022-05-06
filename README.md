@@ -25,6 +25,8 @@ $ pip install flask
 $ pip install pandas
 $ pip install requests
 $ pip install urllib3
+$ pip install tabulate
+$ pip install numpy
 ```
 
 ## How to Run
@@ -38,6 +40,7 @@ On a browser, type in:
 ```
 
 ## Team Members
+- Ayaz Azhar (@azharayaz99)
 - Eugene Chan (@Eugene-Chan2021Fall)
 - Jared Lagman (@jaredlagman)
 - Jonathan Lei (@JonathanL159)
