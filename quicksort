@@ -1,0 +1,35 @@
+f = open('footlocker.txt')
+lines = f.readline()
+
+def quickSort(A,start,end) :
+
+    if start < end:
+        pIndex = Partition(A,start,end)
+        quickSort(A,start,pIndex-1)
+        quickSort(A,pIndex+1,end)
+
+def swap(list, pos1, pos2):
+     
+    list[pos1], list[pos2] = list[pos2], list[pos1]
+    return list
+
+def Partition(A,start,end) :
+    pIndex = start
+    pivot = A[end]
+    for element in range(start,end):
+        if A[element] <= pivot:
+            swap(A,element,pIndex)
+            pIndex = pIndex + 1
+    swap(A,end,pIndex)
+    return pIndex
+
+#print(lines)
+
+
+
+priceBank = [11.3, 100.83, 150, 11.5, 542, 543, 130.03, 30, 23, 830.43]
+#arr = [2,3,1,6,7,10,11]
+quickSort(priceBank,0,len(priceBank)-1)
+print(priceBank)
+#print(arr)
+
