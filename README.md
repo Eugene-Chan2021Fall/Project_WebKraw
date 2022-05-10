@@ -6,7 +6,8 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How to Run](#how-to-run)
-* [Websites Used](websites)
+* [Example](#example)
+* [Websites Used](#websites-used)
 * [Team Members](#team-members)
 
 ## General Info
@@ -39,6 +40,10 @@ On a browser, type in:
 ```
 127.0.0.1:5000
 ```
+
+## Example
+![](images/exampleCode.png)
+
 
 ## Websites Used
 Web scraped these sites:
