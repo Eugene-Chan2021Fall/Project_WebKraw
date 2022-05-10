@@ -6,6 +6,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How to Run](#how-to-run)
+* [Websites Used](websites)
 * [Team Members](#team-members)
 
 ## General Info
@@ -37,6 +38,14 @@ $ python3 main.py
 On a browser, type in:
 ```
 127.0.0.1:5000
+```
+
+## Websites Used
+Web scraped these sites:
+```
+https://www.ebay.com/
+https://www.nike.com/
+https://www.footlocker.com/
 ```
 
 ## Team Members
