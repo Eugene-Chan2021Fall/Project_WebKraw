@@ -6,7 +6,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How to Run](#how-to-run)
-* [Example](#example)
+* [Examples](#example)
 * [Websites Used](#websites-used)
 * [Team Members](#team-members)
 
@@ -46,13 +46,12 @@ On a browser, type in:
 127.0.0.1:5000
 ```
 
-## Example
-Creating the dataframes:
+## Examples
 ![](images/exampleCode1.png)
 ![](images/exampleCode2.png)
 ![](images/exampleCode3.png)
 
-Sorting all the prices:
+* Sorting all the prices:
 ![](images/exampleCode4.png)
 ![](images/exampleCode5.png)
 
