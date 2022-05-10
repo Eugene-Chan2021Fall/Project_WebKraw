@@ -35,6 +35,10 @@ $ pip install numpy
 To run this project, type in:
 ```
 $ python3 main.py
+$ python3 nike.py
+$ python3 ebay.py
+$ python3 footlocker.py
+$ python3 sort.py
 ```
 On a browser, type in:
 ```
