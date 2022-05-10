@@ -24,6 +24,7 @@ Before running this project, install using:
 $ pip install beautifulsoup4
 $ pip install bs4
 $ pip install flask
+$ pip install fonttools
 $ pip install pandas
 $ pip install requests
 $ pip install urllib3
@@ -46,9 +47,14 @@ On a browser, type in:
 ```
 
 ## Example
+Creating the dataframes:
 ![](images/exampleCode1.png)
 ![](images/exampleCode2.png)
 ![](images/exampleCode3.png)
+
+Sorting all the prices:
+![](images/exampleCode4.png)
+![](images/exampleCode5.png)
 
 ## Websites Used
 Web scraped these sites:
