@@ -83,5 +83,13 @@ for url in pages:
 
         print(selection)
 
-        # make a md file of the name, type, price, and url link of each item
+        # print info to excel
+        #writer = pd.ExcelWriter(r'C:\Users\TEST\Desktop\CMPE-130\footlocker.xlsx', engine='xlsxwriter')
+        #df2.to_excel(writer, sheet_name='Sheet1')
+        #writer.save()
+
+        # print info to csv
+        df2.loc[:, selection2].to_csv('footlocker.csv')
+
+        # print info to md file
         df2.loc[:, selection2].to_markdown('footlocker.md')
