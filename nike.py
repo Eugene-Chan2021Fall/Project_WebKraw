@@ -75,5 +75,13 @@ pd.set_option('display.width', 1000)
 
 print(selection)
 
-# make a md file of the name, type, price, and url link of each item
+#print info to excel
+#writer = pd.ExcelWriter(r'C:\Users\TEST\Desktop\CMPE-130\nike.xlsx', engine='xlsxwriter')
+#df2.to_excel(writer, sheet_name='Sheet1')
+#writer.save()
+
+# print info to csv
 df2.loc[:, selection2].to_csv('nike.csv')
+
+# print info to md file
+df2.loc[:, selection2].to_markdown('nike.md')
