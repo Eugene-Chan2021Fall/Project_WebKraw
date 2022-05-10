@@ -80,4 +80,4 @@ for url in pages:
     print(selection)
 
     # print info to md file
-    df2.loc[:, selection2].to_markdown('ebay.md')
+    df2.loc[:, selection2].to_csv('ebay.csv')
