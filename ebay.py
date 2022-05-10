@@ -79,5 +79,13 @@ for url in pages:
     #print(sort_values)
     print(selection)
 
-    # print info to md file
+    # print info to excel
+    #writer = pd.ExcelWriter(r'C:\Users\TEST\Desktop\CMPE-130\ebay.xlsx', engine='xlsxwriter')
+    #df2.to_excel(writer, sheet_name='Sheet1')
+    #writer.save()
+
+    # print info to csv
     df2.loc[:, selection2].to_csv('ebay.csv')
+
+    # print info to md file
+    df2.loc[:, selection2].to_markdown('ebay.md')
