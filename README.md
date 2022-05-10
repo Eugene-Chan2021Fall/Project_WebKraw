@@ -42,8 +42,9 @@ On a browser, type in:
 ```
 
 ## Example
-![](images/exampleCode.png)
-
+![](images/exampleCode1.png)
+![](images/exampleCode2.png)
+![](images/exampleCode3.png)
 
 ## Websites Used
 Web scraped these sites:
