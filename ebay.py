@@ -10,7 +10,8 @@ pages = np.arange(1,2,1)
 for url in pages:
     # site to scrape
     url = "https://www.ebay.com/sch/i.html?_from=R40&_nkw=nike+air+force+1&_sacat=0&_pgn="+ str(url)
-
+    #url = "https://www.ebay.com/e/_electronics/save-on-lenovo?_pgn=" + str(url)
+    
     # a GET request to site and store it
     page = requests.get(url)
 
@@ -18,7 +19,7 @@ for url in pages:
     soup = BeautifulSoup(page.content, 'html.parser')
 
     # find all tags and class name
-    stocks = soup.findAll('li', class_='s-item s-item__pl-on-bottom')
+    stocks = soup.findAll('li', class_='s-item')
 
     # get website's name
     print("\n" + urlparse(url).netloc)
