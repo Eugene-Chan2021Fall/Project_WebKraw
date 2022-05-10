@@ -76,4 +76,4 @@ pd.set_option('display.width', 1000)
 print(selection)
 
 # make a md file of the name, type, price, and url link of each item
-df2.loc[:, selection2].to_markdown('nike.md')
+df2.loc[:, selection2].to_csv('nike.csv')
