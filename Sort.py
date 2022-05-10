@@ -1,3 +1,4 @@
+import fontTools
 import pandas as pd
 
 #A class to represent a Nike Air Force 1 Shoe
@@ -72,6 +73,7 @@ def merge(first, second):
 #open csv file with pandas
 nike = pd.read_csv("nike.csv")
 ebay = pd.read_csv("ebay.csv")
+footlocker = pd.read_csv("footlocker.csv")
 
 
 #get the Name, Price, and Type columns and store them into separate lists
@@ -85,6 +87,11 @@ ebay_price = list(ebay.Price)
 ebay_type = list(ebay.Type)
 
 
+footlocker_name = list(footlocker.Name)
+footlocker_price = list(map(float,footlocker.Price))
+footlocker_type = list(footlocker.Type)
+
+
 # remove irrelavent data from ebay_price
 for x in range(1,len(ebay_price)):
     if len(ebay_price[x]) > 6:
@@ -94,20 +101,28 @@ ebay_price = list(map(float,ebay_price)) # convert each string type to float typ
 
 
 #create a list of uninitialized AirForceOne objects
-shoe_list =  [AirForceOne() for i in range(len(nike_name + ebay_name)-1)]
+shoe_list =  [AirForceOne() for i in range(len(nike_name + ebay_name + footlocker_name)-1)]
 
 #Initialize each AirForceOne object
 for i in range(1,len(ebay_name)):
-    shoe_list[i-1].name_ = ebay_name[i]
-    shoe_list[i-1].type_ = ebay_type[i]
-    shoe_list[i-1].price_ = ebay_price[i]
+   shoe_list[i-1].name_ = ebay_name[i]
+   shoe_list[i-1].type_ = ebay_type[i]
+   shoe_list[i-1].price_ = ebay_price[i]
 
 j = 0
-for i in range(len(ebay_name)-1,len(shoe_list)):
+for i in range(len(ebay_name)-1, len(ebay_name + nike_name)-1):
     shoe_list[i].name_ = nike_name[j]
     shoe_list[i].type_ = nike_type[j]
     shoe_list[i].price_ = nike_price[j]
     j = j + 1
+
+k = 0
+for i in range(len(nike_name+ebay_name)-1,len(shoe_list)):
+    shoe_list[i].name_ = footlocker_name[k]
+    shoe_list[i].type_ = footlocker_type[k]
+    shoe_list[i].price_ = footlocker_price[k]
+    k = k + 1      
+
 
 #mergeSort returns a sorted list
 shoe_list_ms = mergeSort(shoe_list) 
