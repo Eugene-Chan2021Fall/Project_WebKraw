@@ -6,13 +6,12 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [How to Run](#how-to-run)
-* [Examples](#example)
+* [Examples](#examples)
 * [Websites Used](#websites-used)
 * [Team Members](#team-members)
 
 ## General Info
-Simple web crawler to scrape names, description, and prices from online stores for Nikes Air Force 1.
-Prices for all stores are sorted using Quick Sort or Merge Sort.
+Simple web crawler to scrape names, description, and prices from online stores for Nikes Air Force 1. Prices for all stores are sorted using Quick Sort or Merge Sort.
 
 ## Technologies
 Project is created with:
